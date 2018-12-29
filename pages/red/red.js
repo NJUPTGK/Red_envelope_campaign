@@ -31,21 +31,21 @@ Page({
     //建立临时红包列表
     var packetList = [];
     //建立临时红包图片数组
-    var srcList = ["../../images/packet-one.png", "../../images/packet-two.png"];
+    var srcList = ["../../images/hongbao1.png", "../../images/hongbao3.png"];
     //生成初始化红包
     for (var i = 0; i < that.data.packetNum; i++) {
       // 生成随机位置（水平位置）
-      var left = Math.random() * that.data.windowWidth - 20;
+      var left = Math.random() * that.data.windowWidth - 40;
       // 优化位置，防止红包越界现象，保证每个红包都在屏幕之内
       if (left < 0) {
-        left += 20;
+        left += 40;
       } else if (left > that.data.windowWidth) {
-        left -= 20;
+        left -= 40;
       }
       // 建立临时单个红包
       var packet = {
         src: srcList[Math.ceil(Math.random() * 2) - 1],
-        top: -30,
+        top: -50,
         left: left,
         speed: Math.random() * 2500 + 3000     //生成随机掉落时间，保证每个掉落时间保持在3秒到5.5秒之间
       }
