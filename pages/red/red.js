@@ -31,7 +31,7 @@ Page({
     //建立临时红包列表
     var packetList = [];
     //建立临时红包图片数组
-    var srcList = ["../../images/hongbao1.png", "../../images/hongbao3.png"];
+    var srcList = ["../../images/packet-one.png", "../../images/packet-two.png"];
     //生成初始化红包
     for (var i = 0; i < that.data.packetNum; i++) {
       // 生成随机位置（水平位置）
