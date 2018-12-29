@@ -1,0 +1,4 @@
+<view wx:for="{{packetList}}" wx:for-index="index" wx:for-item="items">
+  <image class="red-packet" src="{{items.src}}" style="position:fixed;top:{{items.top}}px;left:{{items.left}}px;-webkit-transition:{{items.speed}}ms linear 0ms;transition:{{items.speed}}ms linear 0ms">
+  </image>
+</view>
