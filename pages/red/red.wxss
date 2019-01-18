@@ -1,6 +1,6 @@
 .red-packet{
   width: 38px;
-  height: 48px;
+  height: 50px;
   z-index: 100;
   transition-property:transform,top;
   transform-origin:50% 50% 0;

@@ -1,0 +1,13 @@
+/* pages/gameBeginning/gameBeginning.wxss */
+.title{
+  top:50rpx;
+  position: absolute;
+  height: 220px;
+  justify-content: center;
+}
+.begin{
+  position: relative;
+  top:400rpx;
+  height: 200px;
+  justify-content: center;
+}

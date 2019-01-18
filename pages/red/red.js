@@ -7,7 +7,7 @@ Page({
     windowWidth: "",//窗口宽度
     windowHeigh: "",//窗口高度
     packetList: [{}],//红包队列
-    packetNum: 200,//总共红包的数量
+    packetNum: 150,//总共红包的数量
     showInter: ''//  循环动画定时器
   },
 
@@ -23,7 +23,7 @@ Page({
         that.setData({
           windowWidth: res.windowWidth,
           windowHeigh: res.windowHeight,
-          top: res.windowHeight - 100   //设置红包初始位置
+          top: res.windowHeight   //设置红包初始位置
         })
       }
     })
@@ -31,7 +31,7 @@ Page({
     //建立临时红包列表
     var packetList = [];
     //建立临时红包图片数组
-    var srcList = ["../../images/packet-one.png", "../../images/packet-two.png"];
+    var srcList = ["../../images/packet1.png", "../../images/packet2.png"];
     //生成初始化红包
     for (var i = 0; i < that.data.packetNum; i++) {
       // 生成随机位置（水平位置）
@@ -61,8 +61,8 @@ Page({
     var tempIndex = 0;
     // 开始定时器，每隔1秒掉落一次红包
     that.data.showInter = setInterval(function () {
-      // 生成当前掉落红包的个数，1-3个
-      var showNum = Math.ceil(Math.random() * 3);
+      // 生成当前掉落红包的个数，1-2个
+      var showNum = Math.ceil(Math.random() * 2);
       // 防止数组越界
       if (tempIndex * showNum >= that.data.packetNum) {
         // 如果所有预生成的红包已经掉落完，清除定时器
