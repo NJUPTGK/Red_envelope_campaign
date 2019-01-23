@@ -1,5 +1,6 @@
 <view wx:for="{{packetList}}" wx:for-index="index" wx:for-item="items" style='background:url("../../images/13r888piCn8p.png");background-size:100% 100%;height:100%'>
     <camera device-position="front" flash="off" binderror="error" style="width: 250rpx; height: 250rpx; top:800rpx;left:250rpx"></camera>
-  <image class="red-packet" src="{{items.src}}" style="position:fixed;top:{{items.top}}px;left:{{items.left}}px;-webkit-transition:{{items.speed}}ms linear 0ms;transition:{{items.speed}}ms linear 0ms">
+    <image class="progress_bar" src="../../images/progress_bar1.png" style='position:absolute;top:50rpx;left:185rpx;width:383rpx;height:32rpx;z-index:3;'></image>
+  <image class="red-packet" src="{{items.src}}" style="position:fixed;z-index:2;top:{{items.top}}px;left:{{items.left}}px;-webkit-transition:{{items.speed}}ms linear 0ms;transition:{{items.speed}}ms linear 0ms">
   </image>
 </view>
