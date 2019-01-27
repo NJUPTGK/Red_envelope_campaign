@@ -11,7 +11,6 @@ Page({
     packetNum: 1,//总共红包的数量
     showInter: ''//  循环动画定时器
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -71,9 +70,9 @@ Page({
       if (tempIndex * showNum >= that.data.packetNum) {
         // 如果所有预生成的红包已经掉落完，清除定时器
         clearInterval(that.data.showInter);
-          wx.redirectTo({
-            url: '../gameOver/gameOver'
-          })
+        wx.redirectTo({
+          url: '../gameOver/gameOver'
+        })
       } else {
         switch (showNum) {
           case 1:
@@ -102,6 +101,5 @@ Page({
         })
       }
     }, 1000)
-    
   }
 })

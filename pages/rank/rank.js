@@ -1,4 +1,4 @@
-// pages/gameOver/gameOver.js
+// pages/rank/rank.js
 Page({
 
   /**
@@ -11,12 +11,6 @@ Page({
   bindViewTap: function () {
     wx.redirectTo({
       url: '../red/red'
-    })
-  },
-  //事件处理函数
-  rank: function () {
-    wx.navigateTo({
-      url: '../rank/rank'
     })
   },
   /**

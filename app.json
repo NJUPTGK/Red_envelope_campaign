@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/gameBeginning/gameBeginning",
     "pages/red/red",
-    "pages/gameOver/gameOver"
+    "pages/gameOver/gameOver",
+    "pages/rank/rank"
   ],
   "window":{
     "backgroundTextStyle":"light",

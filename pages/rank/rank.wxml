@@ -1,0 +1,5 @@
+<!--pages/rank/rank.wxml-->
+<view class="container" style='background:url({{background}});background-size:100% 100%;'>
+  <image class="over" src="../../images/ranking.png"></image>
+  <image class="reset" src="../../images/reset.png" style='position:relative;height:95rpx;width:200rpx;top:600rpx;' bindtap="bindViewTap"></image>
+</view>

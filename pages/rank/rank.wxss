@@ -1,4 +1,4 @@
-/* pages/gameOver/gameOver.wxss */
+/* pages/rank/rank.wxss */
 .over
 {
   top:-80rpx;
