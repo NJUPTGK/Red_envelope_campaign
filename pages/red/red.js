@@ -4,10 +4,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    "background": "/images/13r888piCn8p.png",
     windowWidth: "",//窗口宽度
     windowHeigh: "",//窗口高度
     packetList: [{}],//红包队列
-    packetNum: 150,//总共红包的数量
+    packetNum: 1,//总共红包的数量
     showInter: ''//  循环动画定时器
   },
 
@@ -16,7 +17,10 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-
+    let base64 = wx.getFileSystemManager().readFileSync(this.data.background, 'base64');
+    that.setData({
+      'background': 'data:image/png;base64,' + base64
+    })
     // 获取手机屏幕宽高
     wx.getSystemInfo({
       success: function (res) {
@@ -67,6 +71,9 @@ Page({
       if (tempIndex * showNum >= that.data.packetNum) {
         // 如果所有预生成的红包已经掉落完，清除定时器
         clearInterval(that.data.showInter);
+          wx.redirectTo({
+            url: '../gameOver/gameOver'
+          })
       } else {
         switch (showNum) {
           case 1:
@@ -95,5 +102,6 @@ Page({
         })
       }
     }, 1000)
+    
   }
 })

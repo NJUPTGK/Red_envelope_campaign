@@ -1,0 +1,6 @@
+<!--pages/gameOver/gameOver.wxml-->
+<view class="container" style='background:url({{background}});background-size:100% 100%;'>
+  <image class="over" src="../../images/over.png"></image>
+  <image class="reset" src="../../images/reset.png" style='position:relative;height:79rpx;width:144rpx;top:570rpx;' bindtap="bindViewTap"></image>
+  <text style="font-size:24rpx;top:715rpx;left:165rpx;position:absolute;font-weight:bold;">查看排行榜</text>
+</view>

@@ -2,7 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/gameBeginning/gameBeginning"
+    "pages/gameBeginning/gameBeginning",
+    "pages/red/red",
+    "pages/gameOver/gameOver"
   ],
   "window":{
     "backgroundTextStyle":"light",
