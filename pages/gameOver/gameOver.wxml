@@ -3,4 +3,6 @@
   <image class="over" src="../../images/over.png"></image>
   <image class="reset" src="../../images/reset.png" style='position:relative;height:95rpx;width:200rpx;top:570rpx;' bindtap="bindViewTap"></image>
 <image src="../../images/rank.png" style='position:absolute;height:40rpx;width:150rpx;top:710rpx;left:160rpx;' bindtap="rank"></image>
+<image src="../../images/share.png" style='position:absolute;height:46rpx;width:37rpx;top:840rpx;left:585rpx;'></image>
+<button open-type='share' plain='plain' style='position:absolute;height:46rpx;width:20rpx;top:840rpx;left:570rpx;'></button>
 </view>

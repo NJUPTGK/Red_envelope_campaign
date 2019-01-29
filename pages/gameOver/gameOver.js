@@ -7,6 +7,16 @@ Page({
   data: {
     "background": "/images/13r888piCn8p.png"
   },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    return {
+      title: '红包大作战',//分享内容
+      path: '/pages/index/index',//分享地址
+      imageUrl: '/images/red-packet.png',//分享图片
+    }
+  },
   //事件处理函数
   bindViewTap: function () {
     wx.redirectTo({
@@ -68,13 +78,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
   }
 })

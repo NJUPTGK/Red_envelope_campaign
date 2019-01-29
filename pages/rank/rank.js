@@ -69,6 +69,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: '红包大作战',//分享内容
+      path: '/pages/index/index',//分享地址
+      imageUrl: '/images/red-packet.png',//分享图片
+    }
   }
 })

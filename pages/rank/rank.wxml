@@ -2,4 +2,6 @@
 <view class="container" style='background:url({{background}});background-size:100% 100%;'>
   <image class="over" src="../../images/ranking.png"></image>
   <image class="reset" src="../../images/reset.png" style='position:relative;height:95rpx;width:200rpx;top:600rpx;' bindtap="bindViewTap"></image>
+  <image src="../../images/share.png" style='position:absolute;height:46rpx;width:37rpx;top:880rpx;left:590rpx;'></image>
+  <button open-type='share' plain='plain' style='position:absolute;height:46rpx;width:20rpx;top:880rpx;left:570rpx;'></button>
 </view>
